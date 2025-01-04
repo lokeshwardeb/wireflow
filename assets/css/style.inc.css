@@ -8,6 +8,11 @@ font-family: 'Libre Baskerville', serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Roboto', sans-serif; */
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .inter_font{
     font-family: 'Inter', sans-serif;
@@ -26,7 +31,8 @@ font-family: 'Roboto', sans-serif; */
 }
 
 body{
-    background-color: #ddd;
+    /* background-color: #ddd; */
+    background-color: #F6F7F9;
 }
 .page {
 
@@ -72,4 +78,18 @@ body{
     border: none;
     border-bottom: 2px solid black;
     outline: none;
+  }
+
+
+
+  .cus_sidebar_nav_link{
+    color: black !important;
+    width: 100vw;
+
+  }
+  .cus_sidebar_nav_link:hover{
+    background-color: white !important;
+  }
+  .main_content_page{
+    height: 100vh;
   }

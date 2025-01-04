@@ -1,46 +1,48 @@
-function select_gender(){
+function add_employee(e){
+    e.preventDefault(); 
 
-    var gender_male = document.getElementById("gender_male");
-    var gender_female = document.getElementById("gender_female");
+    let emp_name = $("[name='add_employee_name']").val();
+    let emp_age = $("[name='add_employee_age']").val();
 
-    if(gender_male.checked){
-        gender_female.disabled = 'true'
-    }
+    console.log(emp_name)
 
-    if(gender_female.checked){
-        gender_male.disabled = 'true'
-    }
+    $.ajax({
+        type: "POST",
+        url: "/views/pages/server/add_employee.php",
+        data: {
+            emp_name : emp_name,
+            emp_age : emp_age,
+        },
+        // dataType: "dataType",
+        success: function (response) {
+            
+            // success_alert(response)
+
+            let res = JSON.parse(response);
+
+            if(res.status == "success"){
+                // that means the status is success
+                success_alert("Success !", res.msg);
+                
+            }
+
+            if(res.status == "error"){
+                // that means something error has been happened when adding the employe info
+                danger_alert("Error !", res.msg)
+            }
 
 
+            
+
+            // console.log(response)
+            // console.log(res.data)
+            // console.log(res.status)
+
+            
+            // console.log(response)
+            // response
+        }
+    });
 }
 
-// var field_of_interest_select = document.getElementsByClassName("field_of_interest_select");
-// console.log(field_of_interest_select.length);
-
-function select_interest() {
-    var interest_none = document.getElementById("interest_none");
-    var field_of_interest_select = document.getElementsByClassName("field_of_interest_select");
-    var interest_count = field_of_interest_select.length;
-
-    console.log("the interest select runs");
-
-    for (let i = 0; i <= interest_count; i++) {
-        field_of_interest_select[i].disabled = 'true';
-        
-    }
-
-}
-
-function select_weapons() {
-    var weapons_none = document.getElementById("weapons_none");
-    var weapons_select = document.getElementsByClassName("weapons_select");
-    var weapons_count = weapons_select.length;
-
-    console.log("the weapons select runs");
-
-    for (let i = 0; i <= weapons_count; i++) {
-        weapons_select[i].disabled = 'true';
-        
-    }
-
-}
+// add_employee();
