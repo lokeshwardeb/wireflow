@@ -169,5 +169,17 @@ body{
 =======
   .main_content_page{
     height: 100vh;
+<<<<<<< HEAD
 >>>>>>> 32517b3 (added all the features and functionalities, added ajax and connected it with the php backend for the add employeers features and functionalities. Now working with the add employeers features and functionalities to add and complete all the employeers data and information to the database.)
+=======
+  }
+
+  .hover_table{
+    transition: 500ms linear;
+  }
+  .hover_table:hover{
+    transition: 300ms linear;
+    background-color: #0D6EFD !important;
+    color: white !important;
+>>>>>>> 707ca36 (added the datatable js library and all the other features and functionalities on the software. Now working with the employee info table on the dashboard)
   }

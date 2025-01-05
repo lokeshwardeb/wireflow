@@ -19,11 +19,62 @@ require_once __DIR__ . '/inc/_header.php';
 ?>
 
 
+<<<<<<< HEAD
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireflow || Dashboard </title>
+
+    <!-- favicon icon logo -->
+    <link rel="shortcut icon" href="/assets/img/club_logo.jpg" type="image/x-icon">
+
+    <!-- bootstrap css files -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css
+    https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css -->
+
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css"> -->
+
+
+
+    <!-- custom css files -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/assets/js/alert.js"></script>
+
+    <script src="/assets/js/jquery_3.7.1_min.js"></script>
+
+    <!-- https://code.jquery.com/jquery-3.7.1.js -->
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js -->
+
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
+
+
+    <!-- https://cdn.datatables.net/2.1.8/js/dataTables.js
+https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js -->
+
+    <script src="/assets/js/scripts.js"></script>
+>>>>>>> 707ca36 (added the datatable js library and all the other features and functionalities on the software. Now working with the employee info table on the dashboard)
 
 
 <!-- main code starts here -->
 
+<<<<<<< HEAD
 <!-- <script>
+=======
+<body class="">
+
+    <!-- main code starts here -->
+
+    <!-- <script>
+>>>>>>> 707ca36 (added the datatable js library and all the other features and functionalities on the software. Now working with the employee info table on the dashboard)
         success_alert("the check", "alert runs");
     </script> -->
 
@@ -69,6 +120,84 @@ require_once __DIR__ . '/inc/_header.php';
                                                 </div>
                                             </div>
                                         </div>
+<<<<<<< HEAD
+=======
+
+                                        <?php
+
+                                        require_once __DIR__ . '/inc/_add_employee_component.php';
+
+                                        ?>
+
+
+
+                                        <div class="dashboard_employee_table_section mt-4 pt-4 ">
+                                            <div class="container">
+                                                <div class="dashboard_employee_table">
+                                                    <table class="table" id="employee_info_table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">Employee name</th>
+                                                                <th scope="col">Age</th>
+                                                                <th scope="col">Mobile No</th>
+                                                                <th scope="col">Job Role</th>
+                                                                <th scope="col">Handle</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <?php
+
+                                                            $result_get_employee_data = $controllers->get_data("employees");
+
+                                                            if ($result_get_employee_data) {
+                                                                if ($result_get_employee_data->num_rows > 0) {
+                                                                    // that means the table is not blank
+                                                            
+                                                                    $sl_no = 1;
+
+                                                                    while ($row_emp_data = $result_get_employee_data->fetch_assoc()) {
+                                                                        echo '
+                                                                                <tr class="hover_table" >
+                                                                                    <th scope="row">'. $sl_no .'</th>
+                                                                                    <td>'. $row_emp_data['emp_name'] .'</td>
+                                                                                    <td>'. $row_emp_data['emp_age'] .'</td>
+                                                                                    <td>'. $row_emp_data['emp_mobile_no'] .'</td>
+                                                                                    <td>'. $row_emp_data['emp_job_role'] .'</td>
+                                                                                    <td></td>
+                                                                                    
+                                                                                </tr>
+                                                                            ';
+                                                                            $sl_no++;
+                                                                    }
+
+                                                                }
+                                                            }
+
+
+
+                                                            ?>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="check_table">
+                                                    <?php
+
+                                                    // require_once __DIR__ . '/inc/_employee_table_datatable_ex_template.php';
+                                                    
+                                                    ?>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+>>>>>>> 707ca36 (added the datatable js library and all the other features and functionalities on the software. Now working with the employee info table on the dashboard)
                                     </div>
 
 
