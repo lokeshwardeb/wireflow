@@ -74,47 +74,47 @@
                                                                                         <div
                                                                                             class="mb-3 col-md-12 col-sm-12 ">
                                                                                             <label
-                                                                                                for="add_employee_mobile_no">Employee
+                                                                                                for="add_employee_address">Employee
                                                                                                 Address</label>
                                                                                             <textarea type="text"
                                                                                                 cols="30" rows="10"
-                                                                                                id="add_employee_mobile_no"
-                                                                                                name="add_employee_mobile_no"
+                                                                                                id="add_employee_address"
+                                                                                                name="add_employee_address"
                                                                                                 class="form-control mt-2"></textarea>
                                                                                         </div>
 
                                                                                         <div
                                                                                             class="mb-3 col-md-6 col-sm-12 ">
                                                                                             <label
-                                                                                                for="add_employee_mobile_no">
+                                                                                                for="add_job_role">
                                                                                                 Job Roll</label>
                                                                                             <input type="text"
-                                                                                                id="add_employee_mobile_no"
-                                                                                                name="add_employee_mobile_no"
+                                                                                                id="add_job_role"
+                                                                                                name="add_job_role"
                                                                                                 class="form-control mt-2">
                                                                                         </div>
 
                                                                                         <div
                                                                                             class="mb-3 col-md-6 col-sm-12 ">
                                                                                             <label
-                                                                                                for="add_employee_mobile_no">
+                                                                                                for="add_employee_salary_structure">
                                                                                                 Salary Structure
                                                                                             </label>
                                                                                             <input type="text"
-                                                                                                id="add_employee_mobile_no"
-                                                                                                name="add_employee_mobile_no"
+                                                                                                id="add_employee_salary_structure"
+                                                                                                name="add_employee_salary_structure"
                                                                                                 class="form-control mt-2">
                                                                                         </div>
                                                                                         <div
                                                                                             class="mb-3 col-md-6 col-sm-12 ">
                                                                                             <label
-                                                                                                for="add_employee_mobile_no">
+                                                                                                for="add_employee_assigned_shifts">
                                                                                                 Assigned Shifts </label>
 
-                                                                                                <select name="" class="form-control mt-2 " id="">
+                                                                                                <select name="add_employee_assigned_shifts" class="form-control mt-2 " id="add_employee_assigned_shifts">
                                                                                                     <option value="">Select Assigned Shifts</option>
-                                                                                                    <option value="">Day Shifts</option>
-                                                                                                    <option value="">Night Shifts</option>
+                                                                                                    <option value="day_shift">Day Shifts</option>
+                                                                                                    <option value="night_shift">Night Shifts</option>
                                                                                                 </select>
 
                                                                                         </div>
