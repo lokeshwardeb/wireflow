@@ -59,21 +59,21 @@ body{
     border: none !important;
   } */
 
-  table{
+  /* table{
     border: 1px solid black;
     width: 50%;
-  }
+  } */
   /* th{
     border: 1px solid black;
   } */
 
-  tr{
+  /* tr{
     border: 1px solid black;
   }
 
   td{
     border: 1px solid black;
-  }
+  } */
   .sign_section_input{
     border: none;
     border-bottom: 2px solid black;
@@ -92,4 +92,13 @@ body{
   }
   .main_content_page{
     height: 100vh;
+  }
+
+  .hover_table{
+    transition: 500ms linear;
+  }
+  .hover_table:hover{
+    transition: 300ms linear;
+    background-color: #0D6EFD !important;
+    color: white !important;
   }
