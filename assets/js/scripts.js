@@ -84,11 +84,56 @@ function add_employee(e){
 
 
 
+// $(document).ready(function () {
+//     $('#employee_info_table').DataTable({
+//         dom: 'Bfrtip', // Enables the layout for buttons
+//         buttons: [
+//             'copy', 'csv', 'excel', 'pdf', 'print' // Buttons to include
+//         ],
+//         responsive: true, // Optional: make the table responsive
+//         paging: true,     // Enable pagination
+//         ordering: true,   // Enable column ordering
+//         info: true        // Enable table information display
+//     });
+// });
+
+
+
+
 // add datatable library to the software for showing the employee data
-new DataTable('#employee_info_table');
+// new DataTable('#employee_info_table');
+
+// $(document).ready(function () {
+//     $('#employee_info_table').DataTable({
+//         dom: 'Bfrtip', // Layout configuration for buttons
+//         buttons: [
+//             'copy', 'csv', 'excel', 'pdf', 'print' // Available buttons
+//         ]
+//     });
+// });
+
+
+// new DataTable('#employee_info_table', {
+//     layout: {
+//         topStart: {
+//             buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+//         }
+//     }
+// });
+
+
+// new DataTable('#employee_info_table', {
+//     layout: {
+//         topStart: {
+//             buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+//         }
+//     }
+// });
 // hover_table
 // $("#employee_info_table").find("tr").addClass("hover_table");
 
 // $(selector).append(content);
 
 // jqtag
+
+

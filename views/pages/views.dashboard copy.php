@@ -30,8 +30,7 @@ $controllers = new controllers;
     <!-- https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css
     https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css -->
 
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.2.0/css/buttons.bootstrap5.css">
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css"> -->
 
 
 
@@ -41,27 +40,49 @@ $controllers = new controllers;
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/assets/js/alert.js"></script>
 
-    <!-- jquery js -->
+    <!-- <script src="/assets/js/jquery_3.7.1_min.js"></script> -->
 
-    <script src="/assets/js/jquery_3.7.1_min.js"></script>
+    <!-- https://code.jquery.com/jquery-3.7.1.js -->
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js -->
 
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
 
-    <!-- datatable js -->
-    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
-    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
-
-    <!-- datatable button and features js -->
-      <!-- DataTables Buttons extension for export functionality -->
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+<!-- DataTables CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/2.2.0/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.2.0/css/buttons.bootstrap5.min.css">
 
 
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
-    <!-- custom js files -->
-    <script src="/assets/js/datatable_js_library_config.js"></script>
+<!-- Bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- DataTables -->
+<script src="https://cdn.datatables.net/2.2.0/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.2.0/js/dataTables.bootstrap5.js"></script>
+
+<!-- DataTables Buttons -->
+<script src="https://cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.bootstrap5.js"></script>
+
+<!-- Additional Libraries for Buttons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.print.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.2.0/js/buttons.colVis.min.js"></script>
+
+
+    <!-- <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script> -->
+
+
+    <!-- https://cdn.datatables.net/2.1.8/js/dataTables.js
+https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js -->
+
     <script src="/assets/js/scripts.js"></script>
 
 
@@ -155,7 +176,7 @@ $controllers = new controllers;
 
                                         <div class="dashboard_employee_table_section mt-4 pt-4 ">
                                             <div class="container">
-                                                <div class="dashboard_employee_table table-responsive ">
+                                                <div class="dashboard_employee_table">
                                                     <table class="table" id="employee_info_table">
                                                         <thead>
                                                             <tr>
@@ -237,7 +258,7 @@ $controllers = new controllers;
 
     <?php
 
-    // require_once __DIR__ . '/inc/_footer_script.php';
+    require_once __DIR__ . '/inc/_footer_script.php';
 
     ?>
 
