@@ -321,6 +321,9 @@ function add_admin_user(e){
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9bfaea7 (added datatables with file export features successfully, now working with the all other features)
 // $(document).ready(function () {
 //     $('#employee_info_table').DataTable({
 //         dom: 'Bfrtip', // Enables the layout for buttons
@@ -337,6 +340,7 @@ function add_admin_user(e){
 
 
 
+<<<<<<< HEAD
 // add datatable library to the software for showing the employee data
 // new DataTable('#employee_info_table');
 
@@ -370,11 +374,43 @@ function add_admin_user(e){
 // add datatable library to the software for showing the employee data
 new DataTable('#employee_info_table');
 >>>>>>> 707ca36 (added the datatable js library and all the other features and functionalities on the software. Now working with the employee info table on the dashboard)
+=======
+// add datatable library to the software for showing the employee data
+// new DataTable('#employee_info_table');
+
+// $(document).ready(function () {
+//     $('#employee_info_table').DataTable({
+//         dom: 'Bfrtip', // Layout configuration for buttons
+//         buttons: [
+//             'copy', 'csv', 'excel', 'pdf', 'print' // Available buttons
+//         ]
+//     });
+// });
+
+
+// new DataTable('#employee_info_table', {
+//     layout: {
+//         topStart: {
+//             buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+//         }
+//     }
+// });
+
+
+// new DataTable('#employee_info_table', {
+//     layout: {
+//         topStart: {
+//             buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+//         }
+//     }
+// });
+>>>>>>> 9bfaea7 (added datatables with file export features successfully, now working with the all other features)
 // hover_table
 // $("#employee_info_table").find("tr").addClass("hover_table");
 
 // $(selector).append(content);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // jqtag
 
@@ -385,3 +421,8 @@ new DataTable('#employee_info_table');
 =======
 // jqtag
 >>>>>>> 707ca36 (added the datatable js library and all the other features and functionalities on the software. Now working with the employee info table on the dashboard)
+=======
+// jqtag
+
+
+>>>>>>> 9bfaea7 (added datatables with file export features successfully, now working with the all other features)
