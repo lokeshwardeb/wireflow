@@ -1,4 +1,4 @@
-
+console.log("alert connected");
 // function delete_alert(msg_title1, msg1, msg_title2, msg2, delete_blog_id){
 //     Swal.fire({
 //       title: msg_title1,
