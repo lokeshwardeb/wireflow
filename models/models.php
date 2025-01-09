@@ -59,6 +59,18 @@ class models extends database{
 
      }
 
+     public function delete($table_name, $where_conditions_and_values){
+
+      $sql = "DELETE FROM `$table_name` WHERE $where_conditions_and_values";
+
+      $result = $this->connect()->query($sql);
+
+      return $result;
+
+
+      // $sql = "DELETE FROM `employees` WHERE 0";
+     }
+
      public function pure_data($data){
 
         $result = htmlspecialchars(mysqlI_real_escape_string($this->connect(), $data), ENT_QUOTES);

@@ -5,7 +5,7 @@
 <!-- <script src="/assets/js/likes.js"></script> -->
 <!-- <script src="/assets/js/like_func.js"></script> -->
 
-<script src="/assets/js/jquery_3.7.1_min.js"></script>
+<!-- <script src="/assets/js/jquery_3.7.1_min.js"></script> -->
 
 <script src="/assets/js/scripts.js"></script>
 </body>

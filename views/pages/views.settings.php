@@ -1,19 +1,23 @@
 <?php
+
 // session_start();
 
 // add the active title name or the page name if you want to configure
-// $active_title_name = "Dashboard";
+$active_title_name = "Settings";
 
 // add the active sidebar variable for activate sidebar and also give the sidebar link name which you want to activate to your particular page
 
 // $active_sidebar = "dashboard" ; you can use it to add the active link to the dashboard sidebar link and activate the sidebar link
 
-$active_sidebar = "dashboard";
+$active_sidebar = "settings";
 
 
 // add the header.php after the required mvc files
 require_once __DIR__ . '/inc/_header.php';
 
+
+
+$controllers->add_admin_user();
 
 
 ?>
@@ -53,12 +57,13 @@ require_once __DIR__ . '/inc/_header.php';
                                             <div class="col-md-6 col-sm-6">
                                                 <div class="dashboard_wrapper ms-4">
                                                     <div class="section_title fs-3  pt-3 ">
-                                                        Dashboard
+                                                        Settings
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-sm-6">
-                                                <div class="mobile_navbar_inc_section  d-xl-none   mt-4 ">
+                                                <div
+                                                    class="mobile_navbar_inc_section  d-xl-none   mt-4 ">
                                                     <div class="container">
                                                         <?php
 
@@ -80,7 +85,7 @@ require_once __DIR__ . '/inc/_header.php';
                                                 <div class="card m-4 " style="width: 18rem;">
 
                                                     <div class="card-body ">
-                                                        <h5 class="card-title inknut_regular  ">Total Employees</h5>
+                                                        <h5 class="card-title inknut_regular  ">Total Admin Users</h5>
                                                         <p class="card-text p-2 ">
                                                             100
                                                         </p>
@@ -96,54 +101,45 @@ require_once __DIR__ . '/inc/_header.php';
 
                                     <?php
 
-                                    require_once __DIR__ . '/inc/_add_employee_component.php';
+                                    require_once __DIR__ . '/inc/_add_admin_user_component.php';
 
                                     ?>
 
 
 
-                                    <div class="dashboard_employee_table_section mt-4 pt-4 ">
+                                    <div class="dashboard_admin_table_section mt-4 pt-4 ">
                                         <div class="container">
-                                            <div class="dashboard_employee_table table-responsive mt-4 ">
-                                                <table class="table mb-5  " id="datatable_info_table">
+                                            <div class="dashboard_admin_table table-responsive mt-4 ">
+                                                <table class="table mb-5 " id="datatable_info_table">
                                                     <thead>
                                                         <tr>
                                                             <th scope="col">#</th>
-                                                            <th scope="col">Employee name</th>
-                                                            <th scope="col">Age</th>
-                                                            <th scope="col">Mobile No</th>
-                                                            <th scope="col">Job Role</th>
-                                                            <th scope="col">Handle</th>
+                                                            <th scope="col">Admin name</th>
+                                                            <th scope="col">Email</th>
+                                                            <th scope="col">Joined Datetime</th>
+                                                            <!-- <th scope="col">Job Role</th>
+                                                            <th scope="col">Handle</th> -->
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <?php
 
-                                                        $result_get_employee_data = $controllers->get_data("employees");
+                                                        $result_get_admin_data = $controllers->get_data("admin_users");
 
-                                                        if ($result_get_employee_data) {
-                                                            if ($result_get_employee_data->num_rows > 0) {
+                                                        if ($result_get_admin_data) {
+                                                            if ($result_get_admin_data->num_rows > 0) {
                                                                 // that means the table is not blank
                                                         
                                                                 $sl_no = 1;
 
-                                                                while ($row_emp_data = $result_get_employee_data->fetch_assoc()) {
+                                                                while ($row_admin_data = $result_get_admin_data->fetch_assoc()) {
                                                                     echo '
                                                                                 <tr class="hover_table" >
                                                                                     <th scope="row">' . $sl_no . '</th>
-                                                                                    <td>' . $row_emp_data['emp_name'] . '</td>
-                                                                                    <td>' . $row_emp_data['emp_age'] . '</td>
-                                                                                    <td>' . $row_emp_data['emp_mobile_no'] . '</td>
-                                                                                    <td>' . $row_emp_data['emp_job_role'] . '</td>
-                                                                                    <td>
-                                                                                    <a href="/employee_info_management?get_emp_id='. $row_emp_data['emp_id'] .'" >
-                                                                                    <button class="btn btn-outline-dark btn-sm " >
-                                                                                    
-                                                                                    View details
-
-                                                                                    </button>
-                                                                                    </a>
-                                                                                    </td>
+                                                                                    <td>' . $row_admin_data['admin_name'] . '</td>
+                                                                                    <td>' . $row_admin_data['admin_email'] . '</td>
+                                                                                    <td>' . date("d-M-Y h:s:i a", strtotime($row_admin_data['datetime'])) . '</td>
+                                                                                   
                                                                                     
                                                                                 </tr>
                                                                             ';
@@ -163,7 +159,7 @@ require_once __DIR__ . '/inc/_header.php';
                                             <div class="check_table">
                                                 <?php
 
-                                                // require_once __DIR__ . '/inc/_employee_table_datatable_ex_template.php';
+                                                // require_once __DIR__ . '/inc/_admin_table_datatable_ex_template.php';
                                                 
                                                 ?>
                                             </div>

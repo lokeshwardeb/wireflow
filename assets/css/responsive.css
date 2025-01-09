@@ -1,0 +1,11 @@
+@media screen and (max-width: 1200px) {
+    .dektop_sidebar_display_tracker{
+        display: none !important;
+        margin: 250px !important;
+    }
+    .display_main_row{
+        margin: 25px !important;
+        margin-top: 0px !important;
+        justify-content: center !important;
+    }
+}
