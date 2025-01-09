@@ -82,7 +82,24 @@ require_once __DIR__ . '/inc/_header.php';
                                                     <div class="card-body ">
                                                         <h5 class="card-title inknut_regular  ">Total Employees</h5>
                                                         <p class="card-text p-2 ">
-                                                            100
+                                                            <?php
+
+                                                            $result_count_emp = $controllers->get_data("employees");
+
+                                                            if ($result_count_emp) {
+                                                                if ($result_count_emp->num_rows > 0) {
+                                                                    // that means the employee is exists
+                                                            
+                                                                    echo $result_count_emp->num_rows;
+
+                                                                }else{
+                                                                    // that means the employee is not exists to the software
+                                                                    echo 0;
+                                                                }
+                                                            }
+
+
+                                                            ?>
                                                         </p>
                                                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                                     </div>
@@ -136,7 +153,7 @@ require_once __DIR__ . '/inc/_header.php';
                                                                                     <td>' . $row_emp_data['emp_mobile_no'] . '</td>
                                                                                     <td>' . $row_emp_data['emp_job_role'] . '</td>
                                                                                     <td>
-                                                                                    <a href="/employee_info_management?get_emp_id='. $row_emp_data['emp_id'] .'" >
+                                                                                    <a href="/employee_info_management?get_emp_id=' . $row_emp_data['emp_id'] . '" >
                                                                                     <button class="btn btn-outline-dark btn-sm " >
                                                                                     
                                                                                     View details

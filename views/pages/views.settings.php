@@ -62,8 +62,7 @@ $controllers->add_admin_user();
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-sm-6">
-                                                <div
-                                                    class="mobile_navbar_inc_section  d-xl-none   mt-4 ">
+                                                <div class="mobile_navbar_inc_section  d-xl-none   mt-4 ">
                                                     <div class="container">
                                                         <?php
 
@@ -87,7 +86,24 @@ $controllers->add_admin_user();
                                                     <div class="card-body ">
                                                         <h5 class="card-title inknut_regular  ">Total Admin Users</h5>
                                                         <p class="card-text p-2 ">
-                                                            100
+                                                        <?php
+
+$result_count_emp = $controllers->get_data("admin_users");
+
+if ($result_count_emp) {
+    if ($result_count_emp->num_rows > 0) {
+        // that means the employee is exists
+
+        echo $result_count_emp->num_rows;
+
+    }else{
+        // that means the employee is not exists to the software
+        echo 0;
+    }
+}
+
+
+?>
                                                         </p>
                                                         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                                                     </div>
