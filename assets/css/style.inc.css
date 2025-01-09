@@ -15,6 +15,7 @@ font-family: 'Roboto', sans-serif; */
   padding: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 :root{
   --cus-primary-color: #0D6EFD;
@@ -45,6 +46,8 @@ body{
   font-style: normal;
 }
 
+=======
+>>>>>>> 32517b3 (added all the features and functionalities, added ajax and connected it with the php backend for the add employeers features and functionalities. Now working with the add employeers features and functionalities to add and complete all the employeers data and information to the database.)
 
 .inter_font{
     font-family: 'Inter', sans-serif;
@@ -122,6 +125,7 @@ body{
   .cus_sidebar_nav_link:hover{
     background-color: white !important;
   }
+<<<<<<< HEAD
 
   .cus_sidebar_logout_nav_link{
     transition: 500ms linear;
@@ -162,4 +166,8 @@ body{
     background-color: white !important;
     color: var(--cus-primary-color) !important;
     /* border: 1px solid var(--cus-primary-color) !important; */
+=======
+  .main_content_page{
+    height: 100vh;
+>>>>>>> 32517b3 (added all the features and functionalities, added ajax and connected it with the php backend for the add employeers features and functionalities. Now working with the add employeers features and functionalities to add and complete all the employeers data and information to the database.)
   }

@@ -19,6 +19,43 @@ $controllers->check_login();
 ?>
 
 
+<<<<<<< HEAD
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireflow || Dashboard </title>
+
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+
+    <!-- favicon icon logo -->
+    <link rel="shortcut icon" href="/assets/img/club_logo.jpg" type="image/x-icon">
+
+    <!-- bootstrap css files -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <!-- custom css files -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/assets/js/alert.js"></script>
+
+    <script src="/assets/js/jquery_3.7.1_min.js"></script>
+    <script src="/assets/js/alert.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+
+
+
+
+>>>>>>> 32517b3 (added all the features and functionalities, added ajax and connected it with the php backend for the add employeers features and functionalities. Now working with the add employeers features and functionalities to add and complete all the employeers data and information to the database.)
 <!DOCTYPE html>
 <html lang="en">
 

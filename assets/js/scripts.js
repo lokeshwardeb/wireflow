@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 console.log("scripts connected");
 
@@ -71,6 +72,42 @@ function add_employee(e){
             }
 
 
+=======
+function add_employee(e){
+    e.preventDefault(); 
+
+    let emp_name = $("[name='add_employee_name']").val();
+    let emp_age = $("[name='add_employee_age']").val();
+
+    console.log(emp_name)
+
+    $.ajax({
+        type: "POST",
+        url: "/views/pages/server/add_employee.php",
+        data: {
+            emp_name : emp_name,
+            emp_age : emp_age,
+        },
+        // dataType: "dataType",
+        success: function (response) {
+            
+            // success_alert(response)
+
+            let res = JSON.parse(response);
+
+            if(res.status == "success"){
+                // that means the status is success
+                success_alert("Success !", res.msg);
+                
+            }
+
+            if(res.status == "error"){
+                // that means something error has been happened when adding the employe info
+                danger_alert("Error !", res.msg)
+            }
+
+
+>>>>>>> 32517b3 (added all the features and functionalities, added ajax and connected it with the php backend for the add employeers features and functionalities. Now working with the add employeers features and functionalities to add and complete all the employeers data and information to the database.)
             
 
             // console.log(response)
@@ -84,6 +121,7 @@ function add_employee(e){
     });
 }
 
+<<<<<<< HEAD
 function update_employee(e){
     e.preventDefault(); 
 
@@ -297,3 +335,6 @@ function add_admin_user(e){
 // jqtag
 
 
+=======
+// add_employee();
+>>>>>>> 32517b3 (added all the features and functionalities, added ajax and connected it with the php backend for the add employeers features and functionalities. Now working with the add employeers features and functionalities to add and complete all the employeers data and information to the database.)
