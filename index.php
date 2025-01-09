@@ -9,8 +9,12 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 $Routes = [
 
     "/" => __DIR__ . "/views/pages/views.login.php",
+    "/login" => __DIR__ . "/views/pages/views.login.php",
     "/dashboard" => __DIR__ . "/views/pages/views.dashboard.php",
-    "/form" => __DIR__ . "/views/pages/views.form.php",
+    "/employee_info_management" => __DIR__ . "/views/pages/views.employee_info_management.php",
+    "/settings" => __DIR__ . "/views/pages/views.settings.php",
+    "/logout" => __DIR__ . "/views/pages/views.logout.php",
+    
     
 
 ];
