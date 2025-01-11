@@ -113,10 +113,12 @@ $controllers->login_admin_user();
                                             <div class="login_welcome_section text-center mt-2 ">
                                                 <div class="container">
                                                     <div class="login_welcome_title fs-2 ">
-                                                        Welcome to wireflow
+                                                        
+                                                        <?php echo ucwords("Welcome to wireflow"); ?>
+
                                                     </div>
                                                     <div class="login_welcome_sub_title mt-2 ">
-                                                        A full-fledge EMS Software for your company
+                                                        <?php echo ucwords("A full-fledge EMS Software for your company"); ?>
                                                     </div>
                                                 </div>
                                             </div>
