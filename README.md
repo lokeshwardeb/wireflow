@@ -88,9 +88,6 @@ The last section of a high-quality README file is the license. This lets other d
 
 ## Badges
 
-![Static Badge](https://img.shields.io/badge/PHP.0%25-dfdjklfj-pink)
+![PHP](https://img.shields.io/badge/PHP-black) ![PHP](https://img.shields.io/badge/Javascript-yellow) ![Full Stack](https://img.shields.io/badge/Full_Stack-green)  ![Lokeshwar Deb Protik](https://img.shields.io/badge/Lokeshwar_Deb_Protik-black)
 
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
